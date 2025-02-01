@@ -7,9 +7,11 @@ upper_case_names = []
 # c. Using a for loop, create a list of names in uppercase from the list of people in Exercise 3.
 
 for number in range(1,6):
-    squares.append(number * number)
+    squares.append(number * number) #a
 
-
+for number in range(2,11):
+    if number % 2 == 0:
+        even_numbers.append(number) #b
 
 people = [
     {"name": "Bob", "age": 35, "city": "Cityville"},
@@ -17,9 +19,10 @@ people = [
     {"name": "Diana", "age": 42, "city": "Villagetown"}
 ]
 for person in people:
-    upper_case_names.append(person["name"].upper())
+    upper_case_names.append(person["name"].upper()) #c
 
 print(squares)
 print(upper_case_names)
+print(even_numbers)
 
 
